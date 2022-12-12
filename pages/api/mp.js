@@ -11,9 +11,9 @@ export default async function handler(req, res) {
             }
         ],
         back_urls: {
-            "success": "http://localhost:3000/",
-            "failure": "http://localhost:3000/",
-            "pending": "http://localhost:3000/"
+            "success": "https://sanity-next-ecommerce-omega.vercel.app/",
+            "failure": "https://sanity-next-ecommerce-omega.vercel.app/",
+            "pending": "https://sanity-next-ecommerce-omega.vercel.app/"
         },
         auto_return: "approved",
     };
