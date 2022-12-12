@@ -7,7 +7,7 @@ function Cta(props) {
 
   if (route && route.slug && route.slug.current) {
     return (
-      <Link href={`/${route.slug.current}`}>
+      <Link legacyBehavior href={`/${route.slug.current}`}>
         <a>{title}</a>
       </Link>
     );

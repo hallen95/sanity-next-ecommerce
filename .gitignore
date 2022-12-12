@@ -3,4 +3,5 @@ public/studio
 .vercel
 .env.development
 .env
+.env.local
 .next

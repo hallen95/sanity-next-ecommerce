@@ -73,22 +73,21 @@ function Layout({ children }) {
             </div>
           </div>
           <nav
-            className={`${
-              menuOpen ? "" : "hidden"
-            } sm:flex sm:justify-center sm:items-center mt-4`}
+            className={`${menuOpen ? "" : "hidden"
+              } sm:flex sm:justify-center sm:items-center mt-4`}
           >
             <div className="flex flex-col sm:flex-row">
-              <Link href="/">
+              <Link legacyBehavior href="/">
                 <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0">
                   Home
                 </a>
               </Link>
-              <Link href="/products">
+              <Link legacyBehavior href="/products">
                 <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0">
                   Shop
                 </a>
               </Link>
-              <Link href="/about">
+              <Link legacyBehavior href="/about">
                 <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0">
                   About
                 </a>
@@ -120,10 +119,10 @@ function Layout({ children }) {
           </div>
         </div>
       </header>
-      
+
       {/* // This Cart doesn't really work… yet! */}
       <Cart cartOpen={cartOpen} handleOpen={handleOpen} />
-     
+
       <main className="my-8">{children}</main>
       <footer className="bg-gray-200">
         <div className="container mx-auto px-6 py-3 flex justify-between items-center">
